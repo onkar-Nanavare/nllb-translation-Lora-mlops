@@ -32,7 +32,6 @@ models/custom-nllb/*
 
 # Data
 
-!data/.gitkeep
 
 # Logs
 *.log
