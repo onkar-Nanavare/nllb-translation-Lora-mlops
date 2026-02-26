@@ -5,14 +5,14 @@ on:
     branches:
       - main
     paths:
-      - 'nllb-translation-service/data/**'         # trigger on new data
-      - 'nllb-translation-service\training\train_lora.py'     # trigger on training code changes
-  workflow_dispatch:      # allow manual trigger
+      - 'nllb-translation-service/data/**'
+      - 'nllb-translation-service/training/train_lora.py'
+  workflow_dispatch:
 
 jobs:
   lora_training:
     runs-on: ubuntu-latest
-    timeout-minutes: 360  # ~6 hours max
+    timeout-minutes: 360
 
     steps:
       - name: Checkout code
@@ -46,7 +46,7 @@ jobs:
             --seed 42
 
       - name: Upload Trained Model
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # <-- updated from v3 to v4
         with:
           name: trained-model-lora
           path: ./models/custom-nllb-fast
