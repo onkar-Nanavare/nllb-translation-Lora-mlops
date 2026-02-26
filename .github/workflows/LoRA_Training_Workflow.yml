@@ -52,8 +52,8 @@ jobs:
             --model-name facebook/nllb-200-distilled-600M \
             --source-lang eng_Latn \
             --target-lang hin_Deva \
-            --config /configs/training_config.yaml
-
+            --config ./nllb-translation-service/config/training_config.yaml
+            
       # 6️⃣ Upload trained model artifact
       - name: Upload Trained Model
         uses: actions/upload-artifact@v4
