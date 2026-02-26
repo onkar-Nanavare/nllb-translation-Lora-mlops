@@ -1,0 +1,2000 @@
+# Example medical domain training data (English to Hindi)
+# Format: source_text<TAB>target_text
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+The prescription is ready for pickup	नुस्खा पिकअप के लिए तैयार है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The wound needs to be cleaned daily	घाव को रोज़ साफ करना आवश्यक है
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+Schedule a follow-up appointment in two weeks	दो सप्ताह में फॉलो-अप अपॉइंटमेंट शेड्यूल करें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please take this medication twice daily	कृपया यह दवा दिन में दो बार लें
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा
+Patient history shows allergies to penicillin	रोगी के इतिहास में पेनिसिलिन से एलर्जी दिखाई देती है
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+Take one tablet before meals	भोजन से पहले एक गोली लें
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+Please monitor your blood pressure daily	कृपया रोज़ अपना रक्तचाप जांचें
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+The patient has hypertension	रोगी को उच्च रक्तचाप है
+The patient is experiencing chest pain	रोगी को सीने में दर्द हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Please drink plenty of fluids	कृपया अधिक मात्रा में तरल पदार्थ पिएं
+Patient requires immediate medical attention	रोगी को तत्काल चिकित्सा ध्यान की आवश्यकता है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The insurance claim has been approved	बीमा दावा स्वीकृत कर दिया गया है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The doctor has prescribed antibiotics	डॉक्टर ने एंटीबायोटिक दवाएं निर्धारित की हैं
+Do not skip your medication	अपनी दवा छोड़ें नहीं
+The blood test results are normal	रक्त परीक्षण के परिणाम सामान्य हैं
+The patient is allergic to aspirin	रोगी को एस्पिरिन से एलर्जी है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Blood pressure reading is elevated	रक्तचाप रीडिंग बढ़ी हुई है
+The patient is recovering well after surgery	सर्जरी के बाद रोगी अच्छी तरह से ठीक हो रहा है
+Report any side effects immediately	किसी भी दुष्प्रभाव की तुरंत रिपोर्ट करें
+Take one tablet before meals	भोजन से पहले एक गोली लें
+You need to fast before the blood test	रक्त परीक्षण से पहले आपको उपवास करना होगा

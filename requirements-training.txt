@@ -1,0 +1,22 @@
+# Training-specific dependencies for NLLB Translation Service
+
+# LoRA/PEFT Dependencies
+peft==0.7.1
+bitsandbytes==0.41.3  # For QLoRA 4-bit quantization
+
+# Training Dependencies
+datasets==2.16.1
+evaluate==0.4.1
+sacrebleu==2.4.0
+
+# Configuration
+pyyaml==6.0.1
+
+# Monitoring (Training)
+tensorboard==2.15.1
+# wandb==0.16.2  # Uncomment for Weights & Biases integration
+# mlflow==2.9.2  # Uncomment for MLflow integration
+
+# Additional Utilities
+tqdm==4.66.1
+scikit-learn==1.4.0

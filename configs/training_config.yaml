@@ -1,0 +1,50 @@
+# LoRA/PEFT fine-tuning for NLLB (fast-mode)
+# Medical domain EN->HI with glossary bias
+# Optimized for MX550 (2GB VRAM) and small dataset (2k examples)
+# Faster training (~4–5 hours)
+
+training:
+  type: "lora"
+  output_dir: "./models/custom-nllb-fast"
+  save_strategy: "epoch"
+
+  data:
+    eval_split: 0.1  # 10% for evaluation
+
+  hyperparameters:
+    num_train_epochs: 2  # reduced epochs
+    per_device_train_batch_size: 1
+    per_device_eval_batch_size: 1
+    learning_rate: 2.0e-4
+    gradient_accumulation_steps: 8  # effective batch = 8
+
+  optimization:
+    fp16: true
+    bf16: false
+    gradient_checkpointing: true
+    optim: "adamw_torch"
+
+  logging:
+    strategy: "steps"
+    steps: 50
+
+  evaluation:
+    strategy: "epoch"
+
+lora:
+  r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "v_proj"
+    - "k_proj"
+    - "o_proj"
+  bias: "none"
+  task_type: "SEQ_2_SEQ_LM"
+  inference_mode: false
+
+preprocessing:
+  max_source_length: 128  # reduced from 256 → faster training, less memory
+
+seed: 42

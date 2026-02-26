@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # CPU-based translation service
+  translation-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: application
+    container_name: nllb-translation-service
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=NLLB Translation Service
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - LOG_FORMAT=json
+      - MODEL_NAME=facebook/nllb-200-distilled-600M
+      - MODEL_CACHE_DIR=/app/models/cache
+      - USE_GPU=false
+      - RATE_LIMIT_PER_MINUTE=60
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # GPU-enabled translation service (uncomment to use)
+  # translation-service-gpu:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: gpu
+  #   container_name: nllb-translation-service-gpu
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - APP_NAME=NLLB Translation Service
+  #     - DEBUG=false
+  #     - LOG_LEVEL=INFO
+  #     - LOG_FORMAT=json
+  #     - MODEL_NAME=facebook/nllb-200-distilled-600M
+  #     - MODEL_CACHE_DIR=/app/models/cache
+  #     - USE_GPU=true
+  #     - USE_HALF_PRECISION=true
+  #     - RATE_LIMIT_PER_MINUTE=60
+  #   volumes:
+  #     - ./models:/app/models
+  #     - ./data:/app/data
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+  #   restart: unless-stopped
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 3
+  #     start_period: 60s
+
+networks:
+  default:
+    name: translation-network

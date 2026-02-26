@@ -1,0 +1,44 @@
+name: Deploy NLLB Translation Service
+
+on:
+  workflow_run:
+    workflows: ["LoRA_Training_Workflow"]  # trigger after training workflow
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Trained Model Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: trained-model-lora
+          path: ./models/custom-nllb
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker Image
+        run: |
+          docker build -t onkar-nllb-translation:latest .
+
+      - name: Push Docker Image
+        run: |
+          docker tag onkar-nllb-translation:latest onkar-nllb-translation:latest
+          docker push onkar-nllb-translation:latest
+
+      - name: Deploy (optional)
+        run: |
+          echo "Here you can add deployment commands, e.g., kubectl apply or SSH deploy"

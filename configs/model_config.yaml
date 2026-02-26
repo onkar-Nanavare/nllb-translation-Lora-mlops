@@ -1,0 +1,71 @@
+# Model Configuration for NLLB Translation Service
+
+# Base Model Settings
+model:
+  name: "facebook/nllb-200-distilled-600M"
+  cache_dir: "./models/cache"
+  custom_model_path: null  # Set to path for fine-tuned model
+
+  # Device Configuration
+  device:
+    use_gpu: true
+    use_mps: true  # Enable for Apple Silicon (M1/M2/M3)
+    fallback_to_cpu: true
+
+  # Precision Settings
+  precision:
+    use_half_precision: true  # FP16 for GPU
+    use_float16: true
+    use_bfloat16: false  # For newer GPUs
+
+  # Model Optimization
+  optimization:
+    use_torch_compile: false  # PyTorch 2.0+ only
+    use_better_transformer: true  # Memory efficient attention
+    torch_compile_mode: "reduce-overhead"  # "default", "reduce-overhead", "max-autotune"
+
+  # Memory Management
+  memory:
+    max_memory_mb: 4096
+    offload_folder: "./models/offload"
+    low_cpu_mem_usage: true
+
+# Tokenizer Settings
+tokenizer:
+  max_length: 512
+  padding: "max_length"
+  truncation: true
+  return_tensors: "pt"
+
+# Generation Parameters
+generation:
+  max_length: 512
+  min_length: 1
+  num_beams: 5
+  early_stopping: true
+  no_repeat_ngram_size: 3
+  length_penalty: 1.0
+  temperature: 1.0
+  top_k: 50
+  top_p: 0.95
+  do_sample: false
+
+# Language Settings
+languages:
+  default_source: "eng_Latn"
+  default_target: "hin_Deva"
+  supported_pairs:
+    - source: "eng_Latn"
+      target: "hin_Deva"
+    - source: "eng_Latn"
+      target: "fra_Latn"
+    - source: "eng_Latn"
+      target: "spa_Latn"
+    # Add more language pairs as needed
+
+# Model Loading
+loading:
+  lazy_load: false
+  preload_on_startup: true
+  warmup_enabled: true
+  warmup_samples: 5

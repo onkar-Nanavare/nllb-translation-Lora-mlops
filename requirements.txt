@@ -1,0 +1,35 @@
+# Core Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+gunicorn>=23.0.0
+python-multipart>=0.0.12
+
+# Pydantic and Settings
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+
+# HuggingFace and ML
+transformers>=4.48.0
+torch>=2.10.0
+sentencepiece>=0.2.0
+protobuf>=5.29.0
+accelerate>=1.2.0
+
+# HTTP Client
+httpx>=0.28.0
+aiofiles>=24.1.0
+
+# Utilities
+python-dotenv>=1.0.1
+numpy>=2.2.0
+pyyaml>=6.0.2
+
+# Logging and Monitoring
+python-json-logger>=3.2.0
+prometheus-client>=0.21.0
+
+# Caching (Optional - install if using Redis cache)
+# redis>=5.2.0
+
+# Performance
+orjson>=3.10.0

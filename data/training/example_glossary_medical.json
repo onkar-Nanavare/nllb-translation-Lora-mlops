@@ -1,0 +1,31 @@
+  {
+    "medical_glossary_en_hi": {
+      "hypertension": "उच्च रक्तचाप",
+      "medication": "दवा",
+      "prescription": "नुस्खा",
+      "blood pressure": "रक्तचाप",
+      "diabetes": "मधुमेह",
+      "appointment": "अपॉइंटमेंट",
+      "insurance claim": "बीमा दावा",
+      "patient": "रोगी",
+      "doctor": "डॉक्टर",
+      "hospital": "अस्पताल",
+      "emergency": "आपातकालीन",
+      "surgery": "शल्य चिकित्सा",
+      "allergy": "एलर्जी",
+      "penicillin": "पेनिसिलिन",
+      "vaccine": "टीका",
+    "a vaccine": "एक टीका",
+    "the vaccine": "टीका",
+    "vaccines": "टीके"
+    },
+    "insurance_glossary_en_hi": {
+      "insurance claim": "बीमा दावा",
+      "policy": "पॉलिसी",
+      "premium": "प्रीमियम",
+      "deductible": "कटौती योग्य",
+      "coverage": "कवरेज",
+      "beneficiary": "लाभार्थी",
+      "copayment": "सह-भुगतान"
+    }
+  }

@@ -1,0 +1,123 @@
+# Inference Configuration for Production
+
+# Batch Processing
+batch:
+  enabled: true
+  max_batch_size: 32
+  timeout_seconds: 30
+  dynamic_batching: true
+  parallel_processing: true
+  max_workers: 4
+
+# Caching
+cache:
+  enabled: true
+  type: "memory"  # Options: "memory", "redis", "disabled"
+
+  # Memory Cache Settings
+  memory:
+    max_size: 10000  # Maximum cached translations
+    ttl_seconds: 3600  # 1 hour
+
+  # Redis Cache Settings (when type = "redis")
+  redis:
+    host: "localhost"
+    port: 6379
+    db: 0
+    password: null
+    ttl_seconds: 3600
+    key_prefix: "nllb:translation:"
+
+# Performance Optimization
+performance:
+  # Model Warmup
+  warmup:
+    enabled: true
+    num_samples: 5
+    sample_texts:
+      - "Hello, how are you?"
+      - "This is a test translation."
+      - "Machine learning is transforming the world."
+      - "Welcome to our translation service."
+      - "Thank you for using our API."
+
+  # Request Handling
+  request:
+    timeout_seconds: 30
+    max_text_length: 5000
+    min_text_length: 1
+
+  # Threading
+  threading:
+    use_threading: true
+    max_workers: 4
+
+  # Memory Management
+  memory:
+    cleanup_interval_seconds: 300
+    force_gc_after_requests: 100
+
+# Retry Logic
+retry:
+  enabled: true
+  max_attempts: 3
+  backoff_factor: 2.0  # Exponential backoff
+  retryable_errors:
+    - "CUDA out of memory"
+    - "Connection timeout"
+    - "Model loading failed"
+
+# Circuit Breaker
+circuit_breaker:
+  enabled: true
+  failure_threshold: 5  # Failures before opening circuit
+  recovery_timeout: 60  # Seconds before attempting recovery
+  half_open_requests: 3  # Test requests in half-open state
+
+# Rate Limiting
+rate_limit:
+  enabled: true
+  requests_per_minute: 60
+  requests_per_hour: 1000
+  burst_size: 10
+
+  # Per-endpoint limits
+  endpoints:
+    translate:
+      requests_per_minute: 60
+    batch_translate:
+      requests_per_minute: 20
+
+# Monitoring
+monitoring:
+  metrics_enabled: true
+  metrics_port: 9090
+  health_check_interval: 30
+
+  # Request Tracking
+  tracking:
+    log_requests: true
+    log_translations: false  # Privacy: don't log actual text
+    log_performance: true
+    sample_rate: 1.0  # 100% of requests
+
+# Timeouts
+timeouts:
+  model_loading: 300  # 5 minutes
+  single_translation: 30
+  batch_translation: 60
+  health_check: 5
+
+# Quality Settings
+quality:
+  # Text Validation
+  validation:
+    check_language: true
+    check_length: true
+    check_encoding: true
+
+  # Post-processing
+  postprocessing:
+    strip_whitespace: true
+    normalize_unicode: true
+    remove_special_tokens: true

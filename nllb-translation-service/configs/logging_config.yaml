@@ -1,0 +1,126 @@
+# Logging Configuration
+
+# Global Settings
+logging:
+  version: 1
+  disable_existing_loggers: false
+
+  # Log Levels
+  level:
+    root: "INFO"
+    app: "INFO"
+    uvicorn: "INFO"
+    fastapi: "INFO"
+    transformers: "WARNING"
+    torch: "WARNING"
+
+  # Format
+  format:
+    type: "json"  # Options: "json", "text", "colored"
+
+    # JSON Format (structured logging)
+    json:
+      timestamp: true
+      level: true
+      logger_name: true
+      message: true
+      extra_fields: true
+
+    # Text Format
+    text:
+      format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+      datefmt: "%Y-%m-%d %H:%M:%S"
+
+# Handlers
+handlers:
+  console:
+    enabled: true
+    level: "INFO"
+    format: "json"
+
+  file:
+    enabled: true
+    level: "INFO"
+    format: "json"
+    filename: "./logs/app.log"
+    max_bytes: 10485760  # 10MB
+    backup_count: 5
+
+  error_file:
+    enabled: true
+    level: "ERROR"
+    format: "json"
+    filename: "./logs/error.log"
+    max_bytes: 10485760  # 10MB
+    backup_count: 5
+
+# Request Logging
+request_logging:
+  enabled: true
+  log_request_body: false  # Privacy concern
+  log_response_body: false  # Privacy concern
+  log_headers: true
+  exclude_headers:
+    - "Authorization"
+    - "Cookie"
+    - "X-API-Key"
+  log_query_params: true
+
+# Performance Logging
+performance_logging:
+  enabled: true
+  log_slow_requests: true
+  slow_request_threshold_ms: 1000
+  log_memory_usage: true
+  log_gpu_usage: true
+
+# Structured Fields
+structured_fields:
+  # Always include these fields
+  include:
+    - request_id
+    - timestamp
+    - level
+    - logger
+    - message
+    - source_lang
+    - target_lang
+    - text_length
+    - translation_time_ms
+    - model_loaded
+    - device
+
+  # Exclude sensitive data
+  exclude:
+    - password
+    - api_key
+    - token
+    - secret
+
+# Log Rotation
+rotation:
+  when: "midnight"
+  interval: 1
+  backup_count: 30
+
+# Remote Logging (Optional)
+remote:
+  enabled: false
+
+  # Syslog
+  syslog:
+    enabled: false
+    host: "localhost"
+    port: 514
+
+  # ELK Stack
+  elasticsearch:
+    enabled: false
+    hosts: ["http://localhost:9200"]
+    index_prefix: "nllb-translation"
+
+  # Cloud Logging
+  cloudwatch:
+    enabled: false
+    log_group: "/aws/nllb-translation"
+    log_stream: "production"
