@@ -33,7 +33,9 @@ jobs:
       - name: Run LoRA Training
         run: |
           python training/train_lora.py \
-            --output_dir ./models/custom-nllb-fast \
+            --data-file ./nllb-translation-service/data/new_data.tsv \
+            --glossary-file ./nllb-translation-service/data/glossary.json \
+            --output-dir ./models/custom-nllb-fast \
             --train_batch_size 1 \
             --eval_batch_size 1 \
             --gradient_accumulation_steps 8 \
