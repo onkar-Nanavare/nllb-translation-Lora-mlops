@@ -46,8 +46,8 @@ jobs:
       - name: Run LoRA Training
         run: |
           python training/train_lora.py \
-            --data-file /data/new_data.tsv \
-            --glossary-file /data/glossary.json \
+            --data-file ./nllb-translation-service/data/new_data.tsv \
+            --glossary-file ./nllb-translation-service/data/glossary.json \
             --output-dir ./models/custom-nllb-fast \
             --model-name facebook/nllb-200-distilled-600M \
             --source-lang eng_Latn \
