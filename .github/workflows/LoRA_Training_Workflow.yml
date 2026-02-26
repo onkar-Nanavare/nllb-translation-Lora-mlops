@@ -46,13 +46,13 @@ jobs:
       - name: Run LoRA Training
         run: |
           python training/train_lora.py \
-            --data-file ./nllb-translation-service/data/new_data.tsv \
-            --glossary-file ./nllb-translation-service/data/glossary.json \
+            --data-file /data/new_data.tsv \
+            --glossary-file /data/glossary.json \
             --output-dir ./models/custom-nllb-fast \
             --model-name facebook/nllb-200-distilled-600M \
             --source-lang eng_Latn \
             --target-lang hin_Deva \
-            --config ./nllb-translation-service/configs/training_config.yaml
+            --config /configs/training_config.yaml
 
       # 6️⃣ Upload trained model artifact
       - name: Upload Trained Model
