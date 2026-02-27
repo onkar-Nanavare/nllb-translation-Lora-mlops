@@ -16,6 +16,10 @@ jobs:
     timeout-minutes: 720
 
     steps:
+      - name: Fix Git safe.directory (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          git config --global --add safe.directory '*'
       - name: Checkout code
         uses: actions/checkout@v4
 
