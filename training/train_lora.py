@@ -121,8 +121,8 @@ def train_lora(
     glossary_sources = list(glossary_dataset["source"])
     glossary_targets = list(glossary_dataset["target"])
 
-    combined_sources = main_sources + glossary_sources * 10
-    combined_targets = main_targets + glossary_targets * 10
+    combined_sources = main_sources + glossary_sources * 2
+    combined_targets = main_targets + glossary_targets * 2
 
     hf_dataset = HFDataset.from_dict({
         "source": combined_sources,
