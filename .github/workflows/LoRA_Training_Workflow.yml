@@ -168,7 +168,7 @@ jobs:
             --data-file $env:DATA_FILE `
             --glossary-file $env:GLOSSARY_FILE `
             --output-dir ./models/custom-nllb-fast `
-            --config training_config.yaml
+            --config nllb-translation-service/configs/training_config.yaml
 
       - name: Upload Trained Model (non-blocking)
         uses: actions/upload-artifact@v4
