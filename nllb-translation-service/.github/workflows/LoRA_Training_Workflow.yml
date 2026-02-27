@@ -1,18 +1,19 @@
-name: LoRA Training Workflow
+name: LoRA_Training_Workflow
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'nllb-translation-service/data/**'         # trigger on new data
-      - 'nllb-translation-service\training\train_lora.py'     # trigger on training code changes
-  workflow_dispatch:      # allow manual trigger
+      - 'nllb-translation-service/data/**'         
+      - 'nllb-translation-service/training/**'
+      - 'nllb-translation-service/config/**'
+  workflow_dispatch:
 
 jobs:
   lora_training:
-    runs-on: ubuntu-latest
-    timeout-minutes: 360  # ~6 hours max
+    runs-on: [self-hosted, Windows, X64, gpu, ml]
+    timeout-minutes: 720  # 12 hours (your PC, not GitHub)
 
     steps:
       - name: Checkout code
@@ -29,24 +30,23 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-training.txt
           pip install accelerate datasets transformers peft
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
-      - name: Run LoRA Training
+      - name: Run LoRA Training (GPU safe config)
+        env:
+          CUDA_VISIBLE_DEVICES: "0"
         run: |
-          python training/train_lora.py \
-            --output_dir ./models/custom-nllb-fast \
-            --train_batch_size 1 \
-            --eval_batch_size 1 \
-            --gradient_accumulation_steps 8 \
-            --num_train_epochs 2 \
-            --learning_rate 2e-4 \
-            --fp16 True \
-            --gradient_checkpointing True \
-            --eval_split 0.1 \
-            --max_source_length 128 \
-            --seed 42
+          python training/train_lora.py ^
+            --data-file nllb-translation-service/data/new_data.tsv ^
+            --glossary-file nllb-translation-service/data/glossary.json ^
+            --output-dir ./models/custom-nllb-fast ^
+            --model-name facebook/nllb-200-distilled-600M ^
+            --source-lang eng_Latn ^
+            --target-lang hin_Deva ^
+            --config nllb-translation-service/config/training_config.yaml
 
-      - name: Upload Trained Model
-        uses: actions/upload-artifact@v3
+      - name: Upload Trained LoRA Adapter
+        uses: actions/upload-artifact@v4
         with:
           name: trained-model-lora
           path: ./models/custom-nllb-fast

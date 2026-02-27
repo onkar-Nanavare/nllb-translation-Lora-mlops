@@ -31,7 +31,7 @@ models/custom-nllb/*
 *.onnx
 
 # Data
-!data/.gitkeep
+
 
 # Logs
 *.log
