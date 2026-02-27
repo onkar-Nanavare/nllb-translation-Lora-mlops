@@ -63,36 +63,34 @@ on:
     paths:
       - 'nllb-translation-service/data/**'
       - 'nllb-translation-service/training/**'
-      - '.github/workflows/lora-train.yml'
   workflow_dispatch:
 
 jobs:
   lora_training:
     runs-on: [self-hosted, Windows, X64, gpu, ml]
-    timeout-minutes: 360
+    timeout-minutes: 360  # keep same timeout
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create venv
-        shell: pwsh
-        run: |
-          python -m venv venv
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
-      - name: Activate venv & install dependencies
+      - name: Install dependencies
         shell: pwsh
         run: |
-          .\venv\Scripts\Activate.ps1
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
           pip install accelerate datasets transformers peft
 
-      - name: Run LoRA Training (Fast small-data, scalable later)
+      # 🔥 FAST TEST TRAINING STEP (Only change)
+      - name: Run LoRA Training (FAST TEST MODE)
         shell: pwsh
         run: |
-          .\venv\Scripts\Activate.ps1
           python training/train_lora.py `
             --data-file nllb-translation-service/data/new_data.tsv `
             --glossary-file nllb-translation-service/data/glossary.json `
@@ -100,11 +98,9 @@ jobs:
             --model-name facebook/nllb-200-distilled-600M `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
-            --config training_config.yaml `
+            --config nllb-translation-service/configs/training_config.yaml `
             --num_train_epochs 1 `
-            --max_steps 50 `
-            --per_device_train_batch_size 1 `
-            --gradient_accumulation_steps 2 `
+            --max_steps 30 `
             --fp16 False `
             --gradient_checkpointing False
 
