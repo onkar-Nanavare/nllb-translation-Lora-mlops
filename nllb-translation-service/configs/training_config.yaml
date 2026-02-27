@@ -2,21 +2,20 @@
 # Medical domain EN->HI with glossary bias
 # Optimized for MX550 (2GB VRAM) and small dataset (2k examples)
 # Faster training (~4–5 hours)
-
 training:
   type: "lora"
   output_dir: "./models/custom-nllb-fast"
-  save_strategy: "no"
+  save_strategy: "no"   # don't save checkpoints for fast test
 
   data:
-    eval_split: 0.0
+    eval_split: 0.05   # MUST be > 0 and < 1 (5% eval)
 
   hyperparameters:
     num_train_epochs: 1
     per_device_train_batch_size: 1
     per_device_eval_batch_size: 1
     learning_rate: 2.0e-4
-    gradient_accumulation_steps: 1
+    gradient_accumulation_steps: 16
 
   optimization:
     fp16: false
@@ -26,7 +25,7 @@ training:
 
   logging:
     strategy: "steps"
-    steps: 10
+    steps: 20
 
   evaluation:
     strategy: "no"
