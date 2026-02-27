@@ -15,10 +15,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download Trained Model Artifact
+      - name: Download Trained LoRA Model Artifact
         uses: actions/download-artifact@v4
         with:
-          name: trained-model-lora
+          name: trained-lora-model    # must match the upload name in training workflow
           path: ./models/custom-nllb
 
       - name: Set up Docker Buildx
@@ -37,5 +37,4 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push onkar-nllb-translation:latest
-
       
