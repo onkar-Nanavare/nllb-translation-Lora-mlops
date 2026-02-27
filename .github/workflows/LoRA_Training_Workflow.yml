@@ -54,7 +54,7 @@
 #           name: trained-model-lora
 #           path: models/custom-nllb-fast
 
-name: LoRA Training Workflow (Auto MLOps)
+name: LoRA Training Workflow 
 
 on:
   push:
