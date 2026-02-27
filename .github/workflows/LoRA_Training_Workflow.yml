@@ -1,41 +1,51 @@
-name: LoRA_Training_Workflow
+name: LoRA Training Workflow
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'nllb-translation-service/data/**'         
-      - 'nllb-translation-service/training/**'
+      - 'nllb-translation-service/data/**'
+      - 'training/train_lora.py'
       - 'nllb-translation-service/config/**'
   workflow_dispatch:
 
 jobs:
   lora_training:
     runs-on: [self-hosted, Windows, X64, gpu, ml]
-    timeout-minutes: 720  # 12 hours (your PC, not GitHub)
+    timeout-minutes: 360  # up to 6 hours
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+      - name: Verify Python
+        run: |
+          python --version
+          pip --version
+
+      - name: Create venv (optional but clean)
+        run: |
+          python -m venv venv
+          venv\Scripts\activate
+          python -m pip install --upgrade pip
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          venv\Scripts\activate
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft
-          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+          pip install accelerate datasets transformers peft bitsandbytes
 
-      - name: Run LoRA Training (GPU safe config)
-        env:
-          CUDA_VISIBLE_DEVICES: "0"
+      - name: Debug paths
         run: |
+          dir
+          dir nllb-translation-service\data
+          dir nllb-translation-service\config
+
+      - name: Run LoRA Training (GPU)
+        run: |
+          venv\Scripts\activate
           python training/train_lora.py ^
             --data-file nllb-translation-service/data/new_data.tsv ^
             --glossary-file nllb-translation-service/data/glossary.json ^
@@ -45,7 +55,7 @@ jobs:
             --target-lang hin_Deva ^
             --config nllb-translation-service/config/training_config.yaml
 
-      - name: Upload Trained LoRA Adapter
+      - name: Upload Trained Model
         uses: actions/upload-artifact@v4
         with:
           name: trained-model-lora
