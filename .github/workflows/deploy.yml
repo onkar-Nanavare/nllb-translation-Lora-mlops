@@ -2,7 +2,7 @@ name: Deploy NLLB Translation Service
 
 on:
   workflow_run:
-    workflows: ["LoRA_Training_Workflow"]
+    workflows: ["LoRA Training Workflow"]
     types:
       - completed
 
@@ -38,6 +38,4 @@ jobs:
         run: |
           docker push onkar-nllb-translation:latest
 
-      - name: Deploy (optional)
-        run: |
-          echo "Add kubectl / SSH deploy here"
+      
