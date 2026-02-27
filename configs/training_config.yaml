@@ -6,45 +6,43 @@
 training:
   type: "lora"
   output_dir: "./models/custom-nllb-fast"
-  save_strategy: "epoch"
+  save_strategy: "no"
 
   data:
-    eval_split: 0.1  # 10% for evaluation
+    eval_split: 0.0
 
   hyperparameters:
-    num_train_epochs: 2  # reduced epochs
+    num_train_epochs: 1
     per_device_train_batch_size: 1
     per_device_eval_batch_size: 1
     learning_rate: 2.0e-4
-    gradient_accumulation_steps: 8  # effective batch = 8
+    gradient_accumulation_steps: 1
 
   optimization:
-    fp16: true
+    fp16: false
     bf16: false
-    gradient_checkpointing: true
+    gradient_checkpointing: false
     optim: "adamw_torch"
 
   logging:
     strategy: "steps"
-    steps: 50
+    steps: 10
 
   evaluation:
-    strategy: "epoch"
+    strategy: "no"
 
 lora:
-  r: 32
-  lora_alpha: 64
+  r: 8
+  lora_alpha: 16
   lora_dropout: 0.05
   target_modules:
     - "q_proj"
     - "v_proj"
-    - "k_proj"
-    - "o_proj"
   bias: "none"
   task_type: "SEQ_2_SEQ_LM"
   inference_mode: false
 
 preprocessing:
-  max_source_length: 128  # reduced from 256 → faster training, less memory
+  max_source_length: 64
 
 seed: 42
