@@ -54,20 +54,21 @@
 #           name: trained-model-lora
 #           path: models/custom-nllb-fast
 
-name: LoRA Training Workflow
+name: LoRA Training Workflow (Auto MLOps)
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'nllb-translation-service/data/**'
-      - 'nllb-translation-service/training/**'
+      - "nllb-translation-service/data/**"
+      - "nllb-translation-service/config/**"
+      - "training/**"
   workflow_dispatch:
 
 jobs:
   lora_training:
-    runs-on: [self-hosted, Windows, X64, gpu, ml]
+    runs-on: self-hosted
     timeout-minutes: 360
 
     steps:
@@ -79,32 +80,35 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install dependencies
+      - name: Create venv
         shell: powershell
         run: |
+          python -m venv venv
+
+      - name: Activate venv & Install dependencies
+        shell: powershell
+        run: |
+          .\venv\Scripts\Activate.ps1
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft
+          pip install accelerate datasets transformers peft bitsandbytes
 
       - name: Run LoRA Training (FAST TEST MODE)
         shell: powershell
         run: |
+          .\venv\Scripts\Activate.ps1
           python training/train_lora.py `
             --data-file nllb-translation-service/data/new_data.tsv `
             --glossary-file nllb-translation-service/data/glossary.json `
-            --output-dir ./models/custom-nllb-fast `
+            --output-dir models/custom-nllb-fast `
             --model-name facebook/nllb-200-distilled-600M `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
-            --config nllb-translation-service/config/training_config.yaml `
-            --num_train_epochs 1 `
-            --max_steps 30 `
-            --fp16 False `
-            --gradient_checkpointing False
+            --config nllb-translation-service/configs/training_config.yaml
 
-      - name: Upload Trained Model
+      - name: Upload trained LoRA adapters
         uses: actions/upload-artifact@v4
         with:
-          name: trained-model-lora
-          path: ./models/custom-nllb-fast
+          name: trained-lora-model
+          path: models/custom-nllb-fast
