@@ -1,57 +1,55 @@
-name: LoRA Auto Training (Self-Hosted GPU)
+name: LoRA Training Workflow
 
 on:
   push:
     branches:
       - main
     paths:
-      - "nllb-translation-service/data/**"
-      - "training/**"
-      - ".github/workflows/lora-train.yml"
+      - 'nllb-translation-service/data/**'
+      - 'nllb-translation-service/training/train_lora.py'
+      - 'nllb-translation-service/config/training_config.yaml'
   workflow_dispatch:
 
 jobs:
   lora_training:
-    runs-on: [self-hosted, Windows, X64, gpu, ml]
-    timeout-minutes: 720
+    runs-on: [self-hosted, Windows, gpu, ml]
+    timeout-minutes: 360
 
     steps:
       - name: Fix Git safe.directory (Windows)
-        if: runner.os == 'Windows'
         run: |
           git config --global --add safe.directory '*'
+
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Use system Python (no setup-python)
-        run: |
-          python --version
-          pip --version
-
-      - name: Create venv & install deps
+      - name: Create venv
         run: |
           python -m venv venv
+
+      - name: Install dependencies
+        run: |
           .\venv\Scripts\activate
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-          pip install transformers peft accelerate datasets bitsandbytes
+          pip install accelerate datasets transformers peft
 
-      - name: Run LoRA Training
+      - name: Run LoRA Training (Windows)
+        shell: powershell
         run: |
           .\venv\Scripts\activate
-          python training/train_lora.py ^
-            --data-file nllb-translation-service/data/new_data.tsv ^
-            --glossary-file nllb-translation-service/data/glossary.json ^
-            --output-dir models/custom-nllb-fast ^
-            --model-name facebook/nllb-200-distilled-600M ^
-            --source-lang eng_Latn ^
-            --target-lang hin_Deva ^
+          python nllb-translation-service/training/train_lora.py `
+            --data-file nllb-translation-service/data/new_data.tsv `
+            --glossary-file nllb-translation-service/data/glossary.json `
+            --output-dir models/custom-nllb-fast `
+            --model-name facebook/nllb-200-distilled-600M `
+            --source-lang eng_Latn `
+            --target-lang hin_Deva `
             --config nllb-translation-service/config/training_config.yaml
 
-      - name: Upload trained model
+      - name: Upload Trained Model
         uses: actions/upload-artifact@v4
         with:
-          name: custom-nllb-lora
+          name: trained-model-lora
           path: models/custom-nllb-fast
