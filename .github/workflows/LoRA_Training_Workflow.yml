@@ -54,125 +54,63 @@
 #           name: trained-model-lora
 #           path: models/custom-nllb-fast
 
-# name: LoRA Training Workflow (Auto MLOps)
-
-# on:
-#   push:
-#     branches:
-#       - main
-#     paths:
-#       - "nllb-translation-service/data/**"
-#       - "nllb-translation-service/config/**"
-#       - "training/**"
-#   workflow_dispatch:
-
-# jobs:
-#   lora_training:
-#     runs-on: self-hosted
-#     timeout-minutes: 360
-
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v4
-
-#       - name: Setup Python
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: "3.10"
-
-#       - name: Create venv
-#         shell: powershell
-#         run: |
-#           python -m venv venv
-
-#       - name: Activate venv & Install dependencies
-#         shell: powershell
-#         run: |
-#           .\venv\Scripts\Activate.ps1
-#           python -m pip install --upgrade pip
-#           pip install -r requirements.txt
-#           pip install -r requirements-training.txt
-#           pip install accelerate datasets transformers peft bitsandbytes
-
-#       - name: Run LoRA Training (FAST TEST MODE)
-#         shell: powershell
-#         run: |
-#           .\venv\Scripts\Activate.ps1
-#           python training/train_lora.py `
-#             --data-file nllb-translation-service/data/new_data.tsv `
-#             --glossary-file nllb-translation-service/data/glossary.json `
-#             --output-dir models/custom-nllb-fast `
-#             --model-name facebook/nllb-200-distilled-600M `
-#             --source-lang eng_Latn `
-#             --target-lang hin_Deva `
-#             --config nllb-translation-service/configs/training_config.yaml
-
-#       - name: Upload trained LoRA adapters
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: trained-lora-model
-#           path: models/custom-nllb-fast
-
-
-name: LoRA_Training_Workflow
+name: LoRA Training Workflow (Auto MLOps)
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'nllb-translation-service/data/**'
-      - 'training/**'
-      - '.github/workflows/lora-train.yml'
+      - "nllb-translation-service/data/**"
+      - "nllb-translation-service/config/**"
+      - "training/**"
   workflow_dispatch:
 
 jobs:
   lora_training:
-    runs-on: self-hosted   # your Windows runner
-    timeout-minutes: 120
-
-    env:
-      DRY_RUN: "true"        # 🔁 change to "false" for real training
-      MAX_STEPS: "10"       # 🔁 increase later (e.g. 5000)
-      DATA_FILE: "nllb-translation-service/data/new_data.tsv"
-      GLOSSARY_FILE: "nllb-translation-service/data/glossary.json"
+    runs-on: self-hosted
+    timeout-minutes: 360
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python (use system python if already installed)
-        shell: powershell
-        run: |
-          python --version
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
       - name: Create venv
         shell: powershell
         run: |
           python -m venv venv
 
-      - name: Activate venv + install deps
+      - name: Activate venv & Install dependencies
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft
+          pip install accelerate datasets transformers peft bitsandbytes
 
-      - name: Run LoRA Training (tiny dataset test)
+      - name: Run LoRA Training (FAST TEST MODE)
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
           python training/train_lora.py `
-            --data-file $env:DATA_FILE `
-            --glossary-file $env:GLOSSARY_FILE `
-            --output-dir ./models/custom-nllb-fast `
+            --data-file nllb-translation-service/data/new_data.tsv `
+            --glossary-file nllb-translation-service/data/glossary.json `
+            --output-dir models/custom-nllb-fast `
+            --model-name facebook/nllb-200-distilled-600M `
+            --source-lang eng_Latn `
+            --target-lang hin_Deva `
             --config nllb-translation-service/configs/training_config.yaml
 
-      - name: Upload Trained Model (non-blocking)
+      - name: Upload trained LoRA adapters
         uses: actions/upload-artifact@v4
-        continue-on-error: true
         with:
-          name: trained-model-lora
-          path: ./models/custom-nllb-fast
+          name: trained-lora-model
+          path: models/custom-nllb-fast
+
+
