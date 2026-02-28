@@ -1,26 +1,46 @@
 name: Deploy NLLB Translation Service
 
+permissions:
+  actions: read
+  contents: read
+
 on:
   workflow_run:
     workflows: ["LoRA Training Workflow"]
     types:
       - completed
 
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Training workflow run ID to deploy from (optional). Leave empty to use the triggering run."
+        required: false
+
 jobs:
   deploy:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download Trained LoRA Model Artifact (from training workflow run)
+      - name: Resolve training run id
+        id: resolve
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.run_id }}" ]; then
+            echo "RUN_ID=${{ github.event.inputs.run_id }}" >> $GITHUB_ENV
+          else
+            echo "RUN_ID=${{ github.event.workflow_run.id }}" >> $GITHUB_ENV
+          fi
+
+      - name: Download Trained LoRA Model Artifact
         uses: actions/download-artifact@v4
         with:
           name: trained-lora-model
           path: ./models/custom-nllb
-          run-id: ${{ github.event.workflow_run.id }}   # 🔥 THIS IS THE MISSING PIECE
+          run-id: ${{ env.RUN_ID }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
