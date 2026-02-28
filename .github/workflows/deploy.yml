@@ -38,8 +38,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t onkar-nllb-translation:latest .
+          docker build -t onkarnanavare-nllb-translation:latest .
 
       - name: Push Docker Image
         run: |
-          docker push onkar-nllb-translation:latest
+          docker push onkarnanavare-nllb-translation:latest
