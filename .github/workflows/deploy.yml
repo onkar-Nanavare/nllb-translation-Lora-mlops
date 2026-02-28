@@ -6,6 +6,10 @@ on:
     types:
       - completed
   workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Training workflow run ID to deploy from (leave empty to use latest completed run)"
+        required: false
 
 jobs:
   deploy:
