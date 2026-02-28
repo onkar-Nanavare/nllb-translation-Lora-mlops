@@ -5,6 +5,7 @@ on:
     workflows: ["LoRA Training Workflow"]
     types:
       - completed
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -15,11 +16,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download Trained LoRA Model Artifact
+      - name: Download Trained LoRA Model Artifact (from training workflow run)
         uses: actions/download-artifact@v4
         with:
-          name: trained-lora-model    # must match the upload name in training workflow
+          name: trained-lora-model
           path: ./models/custom-nllb
+          run-id: ${{ github.event.workflow_run.id }}   # 🔥 THIS IS THE MISSING PIECE
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -37,4 +39,3 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push onkar-nllb-translation:latest
-      
