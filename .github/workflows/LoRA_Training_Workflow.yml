@@ -139,7 +139,7 @@ jobs:
         with:
           python-version: "3.10"
 
-      # ✅ Cache venv (no reinstall every time)
+      # 🚀 Cache venv for speed
       - name: Cache venv
         uses: actions/cache@v4
         with:
@@ -175,14 +175,18 @@ jobs:
             --target-lang hin_Deva `
             --config nllb-translation-service/configs/training_config.yaml
 
-      # ✅ Zip model
+      # 📦 Zip trained model
       - name: Zip trained model
         run: |
           tar -czf model.tar.gz models/custom-nllb-fast
 
-      # ✅ Upload to GitHub Release
-      - name: Publish model to GitHub Release
+      # ☁️ Upload to GitHub Releases (model registry)
+      - name: Upload model to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: model-${{ github.run_number }}
+          name: Model ${{ github.run_number }}
+          body: Auto-trained LoRA model
+          files: model.tar.gz
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release create "model-${{ github.run_number }}" model.tar.gz --title "Model ${{ github.run_number }}" --notes "Auto-trained LoRA model"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
