@@ -54,7 +54,66 @@
 #           name: trained-model-lora
 #           path: models/custom-nllb-fast
 
-name: LoRA Training Workflow 
+# name: LoRA Training Workflow 
+
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "nllb-translation-service/data/**"
+#       - "nllb-translation-service/config/**"
+#       - "training/**"
+#   workflow_dispatch:
+
+# jobs:
+#   lora_training:
+#     runs-on: self-hosted
+#     timeout-minutes: 360
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Setup Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.10"
+
+#       - name: Create venv
+#         shell: powershell
+#         run: |
+#           python -m venv venv
+
+#       - name: Activate venv & Install dependencies
+#         shell: powershell
+#         run: |
+#           .\venv\Scripts\Activate.ps1
+#           python -m pip install --upgrade pip
+#           pip install -r requirements.txt
+#           pip install -r requirements-training.txt
+#           pip install accelerate datasets transformers peft bitsandbytes
+
+#       - name: Run LoRA Training (FAST TEST MODE)
+#         shell: powershell
+#         run: |
+#           .\venv\Scripts\Activate.ps1
+#           python training/train_lora.py `
+#             --data-file nllb-translation-service/data/new_data.tsv `
+#             --glossary-file nllb-translation-service/data/glossary.json `
+#             --output-dir models/custom-nllb-fast `
+#             --model-name facebook/nllb-200-distilled-600M `
+#             --source-lang eng_Latn `
+#             --target-lang hin_Deva `
+#             --config nllb-translation-service/configs/training_config.yaml
+
+#       - name: Upload trained LoRA adapters
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: trained-lora-model
+#           path: models/custom-nllb-fast
+
+name: LoRA Training Workflow
 
 on:
   push:
@@ -80,10 +139,19 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Create venv
+      # ✅ Cache venv (no reinstall every time)
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: venv
+          key: venv-${{ hashFiles('requirements.txt', 'requirements-training.txt') }}
+
+      - name: Create venv if not exists
         shell: powershell
         run: |
-          python -m venv venv
+          if (!(Test-Path "venv")) {
+            python -m venv venv
+          }
 
       - name: Activate venv & Install dependencies
         shell: powershell
@@ -94,7 +162,7 @@ jobs:
           pip install -r requirements-training.txt
           pip install accelerate datasets transformers peft bitsandbytes
 
-      - name: Run LoRA Training (FAST TEST MODE)
+      - name: Run LoRA Training
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
@@ -107,10 +175,14 @@ jobs:
             --target-lang hin_Deva `
             --config nllb-translation-service/configs/training_config.yaml
 
-      - name: Upload trained LoRA adapters
-        uses: actions/upload-artifact@v4
-        with:
-          name: trained-lora-model
-          path: models/custom-nllb-fast
+      # ✅ Zip model
+      - name: Zip trained model
+        run: |
+          tar -czf model.tar.gz models/custom-nllb-fast
 
-
+      # ✅ Upload to GitHub Release
+      - name: Publish model to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "model-${{ github.run_number }}" model.tar.gz --title "Model ${{ github.run_number }}" --notes "Auto-trained LoRA model"
