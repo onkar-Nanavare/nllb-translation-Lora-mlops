@@ -5,7 +5,6 @@ on:
     workflows: ["LoRA Training Workflow"]
     types:
       - completed
-
   workflow_dispatch:
 
 jobs:
@@ -17,17 +16,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # ✅ Always download the latest model
-      - name: Download latest trained model
+      - name: Download latest trained model from GitHub Releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p models/custom-nllb/latest
           gh release download latest --pattern "model.tar.gz" --dir ./models
 
       - name: Extract model
         run: |
-          tar -xzf ./models/model.tar.gz -C ./models/custom-nllb/latest
+          tar -xzf ./models/model.tar.gz -C ./models
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -40,9 +37,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build \
-            --build-arg MODEL_URI=${{ secrets.MODEL_URI }} \
-            -t onkarnanavare/nllb-translation:latest .
+          docker build -t onkarnanavare/nllb-translation:latest .
 
       - name: Push Docker Image
         run: |
