@@ -24,7 +24,7 @@
 
 torch==2.1.2
 transformers==4.38.2
-peft==0.10.0
+peft==0.11.0
 accelerate==0.27.2
 datasets==2.16.1
 sentencepiece==0.1.99
