@@ -123,14 +123,23 @@ jobs:
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
-          python -c "import sentencepiece, tokenizers; print('sentencepiece:', sentencepiece.__version__); print('tokenizers:', tokenizers.__version__)"
+          python -c "import sentencepiece, tokenizers; print('sentencepiece OK:', sentencepiece.__version__); print('tokenizers OK:', tokenizers.__version__)"
 
-      - name: Download latest LoRA adapter (if exists)
+      - name: Download latest trained model (if exists)
         shell: powershell
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release download --pattern "model.tar.gz" --dir ./models --clobber || echo "No previous model found"
+          if (!(Test-Path "models")) {
+            New-Item -ItemType Directory -Path models | Out-Null
+          }
+
+          try {
+            gh release download --pattern "model.tar.gz" --dir ./models --clobber
+            Write-Host "Previous model downloaded."
+          } catch {
+            Write-Host "No previous model found. Training from base model."
+          }
 
       - name: Extract previous model (if exists)
         shell: powershell
