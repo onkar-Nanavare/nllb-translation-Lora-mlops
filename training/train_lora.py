@@ -1,9 +1,3 @@
-"""
-LoRA/PEFT-based fine-tuning for NLLB model.
-Medical domain EN->HI with glossary bias.
-Production-ready MLOps training pipeline.
-"""
-
 import os
 import sys
 import argparse
@@ -30,11 +24,9 @@ from training.train import TranslationDataset
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
 def load_training_config(config_path: str) -> Dict:
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
-
 
 def create_lora_config(config: Dict) -> LoraConfig:
     lora_params = config["lora"]
@@ -48,17 +40,14 @@ def create_lora_config(config: Dict) -> LoraConfig:
         inference_mode=False,
     )
 
-
 def load_glossary_pairs(glossary_path: str):
     with open(glossary_path, "r", encoding="utf-8") as f:
         glossary = json.load(f)
-
     pairs = []
     for domain in glossary.values():
         for src, tgt in domain.items():
             pairs.append((src, tgt))
     return pairs
-
 
 def preprocess_function(examples, tokenizer, max_length):
     inputs = tokenizer(
@@ -67,22 +56,18 @@ def preprocess_function(examples, tokenizer, max_length):
         truncation=True,
         padding="max_length",
     )
-
     labels = tokenizer(
         examples["target"],
         max_length=max_length,
         truncation=True,
         padding="max_length",
     )
-
     labels["input_ids"] = [
         [(l if l != tokenizer.pad_token_id else -100) for l in label]
         for label in labels["input_ids"]
     ]
-
     inputs["labels"] = labels["input_ids"]
     return inputs
-
 
 def train_lora(
     data_file: str,
@@ -95,9 +80,9 @@ def train_lora(
     resume_from: Optional[str] = None,
 ):
     logger.info("🚀 Starting NLLB LoRA fine-tuning pipeline")
-
     config = load_training_config(config_path)
 
+    # Load datasets
     dataset = TranslationDataset(data_file, source_lang, target_lang)
     hf_dataset = dataset.to_hf_dataset()
 
@@ -119,9 +104,11 @@ def train_lora(
     train_dataset = split["train"]
     eval_dataset = split["test"]
 
+    # Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     tokenizer.src_lang = source_lang
 
+    # Model
     base_model_path = model_name
     finetuned_path = config.get("model", {}).get("finetuned_path")
 
@@ -132,13 +119,13 @@ def train_lora(
         logger.info(f"🔁 Auto-resuming from latest adapter: {finetuned_path}")
 
     logger.info(f"📦 Loading base model: {base_model_path}")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     model = AutoModelForSeq2SeqLM.from_pretrained(
         base_model_path,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-        device_map=None,  # ✅ Windows-safe
-    )
+        torch_dtype=torch.float16 if device == "cuda" else torch.float32,
+    ).to(device)
 
-    model.config.use_cache = False  # ✅ required for gradient checkpointing
+    model.config.use_cache = False  # required for LoRA
 
     if resume_from and os.path.exists(resume_from):
         model = PeftModel.from_pretrained(model, resume_from, is_trainable=True)
@@ -146,7 +133,7 @@ def train_lora(
         lora_config = create_lora_config(config)
         model = get_peft_model(model, lora_config)
 
-    model.gradient_checkpointing_enable()
+    model.train()
     model.print_trainable_parameters()
 
     if hasattr(tokenizer, "lang_code_to_id"):
@@ -154,6 +141,7 @@ def train_lora(
 
     max_length = config["preprocessing"]["max_source_length"]
 
+    # Preprocess datasets
     train_dataset = train_dataset.map(
         lambda x: preprocess_function(x, tokenizer, max_length),
         batched=True,
@@ -165,8 +153,10 @@ def train_lora(
         remove_columns=eval_dataset.column_names,
     )
 
+    # Data collator
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
+    # Training args
     hp = config["training"]["hyperparameters"]
     opt = config["training"]["optimization"]
     log_cfg = config["training"]["logging"]
@@ -179,21 +169,16 @@ def train_lora(
         gradient_accumulation_steps=hp["gradient_accumulation_steps"],
         learning_rate=hp["learning_rate"],
         num_train_epochs=hp["num_train_epochs"],
-
         save_strategy=config["training"]["save_strategy"],
-
         logging_strategy=log_cfg["strategy"],
         logging_steps=log_cfg["steps"],
-
         evaluation_strategy=eval_cfg["strategy"],
-
-        fp16=torch.cuda.is_available(),
-        gradient_checkpointing=opt["gradient_checkpointing"],
-
+        fp16=device=="cuda",
         optim="adamw_torch",
         report_to="none",
     )
 
+    # Trainer
     trainer = Seq2SeqTrainer(
         model=model,
         args=training_args,
@@ -206,9 +191,7 @@ def train_lora(
 
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
-
     logger.info(f"✅ LoRA adapter saved to: {output_dir}")
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -220,7 +203,6 @@ def main():
     parser.add_argument("--model-name", default="facebook/nllb-200-distilled-600M")
     parser.add_argument("--config", default="configs/training_config.yaml")
     parser.add_argument("--resume-from", default=None)
-
     args = parser.parse_args()
 
     train_lora(
@@ -233,7 +215,6 @@ def main():
         config_path=args.config,
         resume_from=args.resume_from,
     )
-
 
 if __name__ == "__main__":
     main()
