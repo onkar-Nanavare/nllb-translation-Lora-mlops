@@ -122,23 +122,31 @@ def train_lora(
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     tokenizer.src_lang = source_lang
 
-    base_model_path = model_name
+    # Resolve resume path
     finetuned_path = config.get("model", {}).get("finetuned_path")
-
     if resume_from and os.path.exists(resume_from):
         logger.info(f"🔁 Resuming from LoRA adapter: {resume_from}")
     elif finetuned_path and os.path.exists(finetuned_path):
         resume_from = finetuned_path
         logger.info(f"🔁 Auto-resuming from latest adapter: {finetuned_path}")
+    else:
+        resume_from = None
 
-    logger.info(f"📦 Loading base model: {base_model_path}")
+    logger.info(f"📦 Loading base model: {model_name}")
+
+    # ✅ FIX: offload_folder + CPU safe loading
+    offload_dir = os.path.join(output_dir, "offload")
+    os.makedirs(offload_dir, exist_ok=True)
+
     model = AutoModelForSeq2SeqLM.from_pretrained(
-        base_model_path,
+        model_name,
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-        device_map="auto",
+        device_map="auto" if torch.cuda.is_available() else None,
+        offload_folder=offload_dir,
+        low_cpu_mem_usage=True,
     )
 
-    if resume_from and os.path.exists(resume_from):
+    if resume_from:
         model = PeftModel.from_pretrained(model, resume_from)
     else:
         lora_config = create_lora_config(config)
@@ -167,8 +175,6 @@ def train_lora(
     log_cfg = config["training"]["logging"]
     eval_cfg = config["training"]["evaluation"]
 
-    from transformers import Seq2SeqTrainingArguments
-
     training_args = Seq2SeqTrainingArguments(
         output_dir=output_dir,
         per_device_train_batch_size=hp["per_device_train_batch_size"],
@@ -178,16 +184,14 @@ def train_lora(
         num_train_epochs=hp["num_train_epochs"],
 
         save_strategy=config["training"]["save_strategy"],
-
         logging_strategy=log_cfg["strategy"],
         logging_steps=log_cfg["steps"],
 
-        evaluation_strategy=eval_cfg["strategy"],   # ✅ correct for transformers==4.38.2
+        evaluation_strategy=eval_cfg["strategy"],
 
         fp16=torch.cuda.is_available(),
         gradient_checkpointing=opt["gradient_checkpointing"],
-
-        optim="adamw_torch",                  # ✅ Windows-safe optimizer
+        optim="adamw_torch",
         report_to="none",
     )
 
@@ -199,7 +203,7 @@ def train_lora(
         data_collator=data_collator,
     )
 
-    trainer.train(resume_from_checkpoint=config.get("model", {}).get("resume_from_checkpoint", False))
+    trainer.train()
 
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
