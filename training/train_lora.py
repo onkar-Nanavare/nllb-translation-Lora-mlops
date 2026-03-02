@@ -46,6 +46,7 @@ def create_lora_config(config: Dict) -> LoraConfig:
         bias=lora_params["bias"],
         task_type=TaskType.SEQ_2_SEQ_LM,
         inference_mode=False,
+        use_rslora=False,
     )
 
 
