@@ -104,6 +104,7 @@ jobs:
         with:
           python-version: "3.10"
 
+      # Cache venv
       - name: Cache venv
         uses: actions/cache@v4
         with:
@@ -117,62 +118,69 @@ jobs:
             python -m venv venv
           }
 
-      - name: Activate venv & Install dependencies
+      - name: Activate venv & Install dependencies (FIX tokenizer crash)
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
+          python -m pip install --upgrade pip wheel setuptools
+          pip install --no-cache-dir sentencepiece protobuf tokenizers
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft bitsandbytes sentencepiece protobuf
+          pip install accelerate datasets transformers peft bitsandbytes
 
-      #  Download previous model if exists
-      - name: Download latest model (if exists)
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p models/custom-nllb/latest
-          gh release download latest --pattern "model.tar.gz" --dir ./models
-
-      - name: Extract previous model (if exists)
-        continue-on-error: true
-        run: |
-          tar -xzf ./models/model.tar.gz -C ./models/custom-nllb/latest
-
-      #  Train from previous model if exists, else base model
-      - name: Run LoRA Training (incremental)
+      - name: Verify tokenizer deps
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
+          python - <<EOF
+          import sentencepiece
+          import tokenizers
+          print("sentencepiece OK:", sentencepiece.__version__)
+          print("tokenizers OK:", tokenizers.__version__)
+          EOF
 
-          if (Test-Path "models/custom-nllb/latest") {
-            echo "Using previous trained model"
-            $MODEL_PATH="models/custom-nllb/latest"
-          } else {
-            echo "Using base model"
-            $MODEL_PATH="facebook/nllb-200-distilled-600M"
+      - name: Download latest model from GitHub Releases (for incremental training)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: powershell
+        run: |
+          gh release download --pattern "model.tar.gz" --dir ./prev_model || echo "No previous model found"
+
+      - name: Extract previous model (if exists)
+        shell: powershell
+        run: |
+          if (Test-Path "./prev_model/model.tar.gz") {
+            tar -xzf ./prev_model/model.tar.gz -C ./models
+          }
+
+      - name: Run LoRA Training (auto resume)
+        shell: powershell
+        run: |
+          .\venv\Scripts\Activate.ps1
+          $resume = ""
+          if (Test-Path "./models/custom-nllb/latest") {
+            $resume="--resume-from ./models/custom-nllb/latest"
           }
 
           python training/train_lora.py `
             --data-file data/new_data.tsv `
             --glossary-file data/glossary.json `
             --output-dir models/custom-nllb/latest `
-            --model-name $MODEL_PATH `
+            --model-name facebook/nllb-200-distilled-600M `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
-            --config configs/training_config.yaml
+            --config configs/training_config.yaml `
+            $resume
 
       - name: Zip trained model
-        run: |
-          tar -czf model.tar.gz models/custom-nllb/latest
+        run: tar -czf model.tar.gz models/custom-nllb/latest
 
-      - name: Upload model to GitHub Release (latest + versioned)
+      - name: Upload model to GitHub Release (latest pointer)
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: model-${{ github.run_number }}
-          name: Model ${{ github.run_number }}
-          body: Incrementally fine-tuned LoRA model
+          tag_name: latest
+          name: Latest Model
+          body: Auto-trained LoRA model (latest)
           files: model.tar.gz
-          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
