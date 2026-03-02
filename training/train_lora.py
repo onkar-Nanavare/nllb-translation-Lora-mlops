@@ -46,7 +46,6 @@ def create_lora_config(config: Dict) -> LoraConfig:
         bias=lora_params["bias"],
         task_type=TaskType.SEQ_2_SEQ_LM,
         inference_mode=False,
-        use_rslora=False,
     )
 
 
@@ -123,35 +122,32 @@ def train_lora(
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     tokenizer.src_lang = source_lang
 
-    # Resolve resume path
+    base_model_path = model_name
     finetuned_path = config.get("model", {}).get("finetuned_path")
+
     if resume_from and os.path.exists(resume_from):
         logger.info(f"🔁 Resuming from LoRA adapter: {resume_from}")
     elif finetuned_path and os.path.exists(finetuned_path):
         resume_from = finetuned_path
         logger.info(f"🔁 Auto-resuming from latest adapter: {finetuned_path}")
-    else:
-        resume_from = None
 
-    logger.info(f"📦 Loading base model: {model_name}")
-
-    # ✅ FIX: offload_folder + CPU safe loading
-    offload_dir = os.path.join(output_dir, "offload")
-    os.makedirs(offload_dir, exist_ok=True)
-
+    logger.info(f"📦 Loading base model: {base_model_path}")
     model = AutoModelForSeq2SeqLM.from_pretrained(
-        model_name,
+        base_model_path,
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-        device_map="auto" if torch.cuda.is_available() else None,
-        offload_folder=offload_dir,
-        low_cpu_mem_usage=True,
+        device_map=None,  # ✅ Windows-safe
     )
 
-    if resume_from:
-        model = PeftModel.from_pretrained(model, resume_from)
+    model.config.use_cache = False  # ✅ required for gradient checkpointing
+
+    if resume_from and os.path.exists(resume_from):
+        model = PeftModel.from_pretrained(model, resume_from, is_trainable=True)
     else:
         lora_config = create_lora_config(config)
         model = get_peft_model(model, lora_config)
+
+    model.gradient_checkpointing_enable(use_reentrant=False)
+    model.print_trainable_parameters()
 
     if hasattr(tokenizer, "lang_code_to_id"):
         model.config.forced_bos_token_id = tokenizer.lang_code_to_id[target_lang]
@@ -185,6 +181,7 @@ def train_lora(
         num_train_epochs=hp["num_train_epochs"],
 
         save_strategy=config["training"]["save_strategy"],
+
         logging_strategy=log_cfg["strategy"],
         logging_steps=log_cfg["steps"],
 
@@ -192,6 +189,7 @@ def train_lora(
 
         fp16=torch.cuda.is_available(),
         gradient_checkpointing=opt["gradient_checkpointing"],
+
         optim="adamw_torch",
         report_to="none",
     )
