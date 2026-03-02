@@ -82,11 +82,10 @@ name: LoRA Training Workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
       - "data/**"
-      - "config/**"
+      - "configs/**"
       - "training/**"
   workflow_dispatch:
 
@@ -104,12 +103,6 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: venv
-          key: venv-${{ hashFiles('requirements.txt', 'requirements-training.txt') }}
-
       - name: Create venv if not exists
         shell: powershell
         run: |
@@ -121,58 +114,65 @@ jobs:
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft bitsandbytes
+          pip install accelerate datasets transformers peft  sentencepiece tokenizers
 
-      #  Download previous model if exists
-      - name: Download latest model (if exists)
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p models/custom-nllb/latest
-          gh release download latest --pattern "model.tar.gz" --dir ./models
-
-      - name: Extract previous model (if exists)
-        continue-on-error: true
-        run: |
-          tar -xzf ./models/model.tar.gz -C ./models/custom-nllb/latest
-
-      #  Train from previous model if exists, else base model
-      - name: Run LoRA Training (incremental)
+      - name: Verify tokenizer deps
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
+          python -c "import sentencepiece, tokenizers; print('sentencepiece OK:', sentencepiece.__version__); print('tokenizers OK:', tokenizers.__version__)"
 
-          if (Test-Path "models/custom-nllb/latest") {
-            echo "Using previous trained model"
-            $MODEL_PATH="models/custom-nllb/latest"
-          } else {
-            echo "Using base model"
-            $MODEL_PATH="facebook/nllb-200-distilled-600M"
+      - name: Download latest trained model (if exists)
+        shell: powershell
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if (!(Test-Path "models")) {
+            New-Item -ItemType Directory -Path models | Out-Null
           }
 
+          try {
+            gh release download --pattern "model.tar.gz" --dir ./models --clobber
+            Write-Host "Previous model downloaded."
+          } catch {
+            Write-Host "No previous model found. Training from base model."
+          }
+
+      - name: Extract previous model (if exists)
+        shell: powershell
+        run: |
+          if (Test-Path "./models/model.tar.gz") {
+            tar -xzf ./models/model.tar.gz -C ./models
+          }
+
+      - name: Run LoRA Training (resume automatically)
+        shell: powershell
+        run: |
+          .\venv\Scripts\Activate.ps1
           python training/train_lora.py `
             --data-file data/new_data.tsv `
             --glossary-file data/glossary.json `
-            --output-dir models/custom-nllb/latest `
-            --model-name $MODEL_PATH `
+            --output-dir models/custom-nllb-fast `
+            --model-name facebook/nllb-200-distilled-600M `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
-            --config configs/training_config.yaml
+            --config configs/training_config.yaml `
+            --resume-from models/custom-nllb-fast
 
       - name: Zip trained model
+        shell: powershell
         run: |
-          tar -czf model.tar.gz models/custom-nllb/latest
+          tar -czf model.tar.gz models/custom-nllb-fast
 
-      - name: Upload model to GitHub Release (latest + versioned)
+      - name: Upload model to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: model-${{ github.run_number }}
           name: Model ${{ github.run_number }}
-          body: Incrementally fine-tuned LoRA model
+          body: Auto-trained LoRA model
           files: model.tar.gz
-          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
