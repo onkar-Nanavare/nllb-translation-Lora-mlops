@@ -103,12 +103,13 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Create venv if not exists
+      - name: Recreate venv (clean every run)
         shell: powershell
         run: |
-          if (!(Test-Path "venv")) {
-            python -m venv venv
+          if (Test-Path "venv") {
+            Remove-Item -Recurse -Force venv
           }
+          python -m venv venv
 
       - name: Activate venv & Install dependencies
         shell: powershell
@@ -117,7 +118,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install accelerate datasets transformers peft  sentencepiece tokenizers
 
       - name: Verify tokenizer deps
         shell: powershell

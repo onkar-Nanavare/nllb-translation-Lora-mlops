@@ -182,7 +182,7 @@ def train_lora(
         logging_strategy=log_cfg["strategy"],
         logging_steps=log_cfg["steps"],
 
-        eval_strategy=eval_cfg["strategy"],   # ✅ correct for transformers==4.38.2
+        evaluation_strategy=eval_cfg["strategy"],   # ✅ correct for transformers==4.38.2
 
         fp16=torch.cuda.is_available(),
         gradient_checkpointing=opt["gradient_checkpointing"],
