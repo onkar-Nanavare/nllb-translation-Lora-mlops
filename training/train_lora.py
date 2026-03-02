@@ -167,22 +167,29 @@ def train_lora(
     log_cfg = config["training"]["logging"]
     eval_cfg = config["training"]["evaluation"]
 
+    from transformers import Seq2SeqTrainingArguments
+
     training_args = Seq2SeqTrainingArguments(
-    output_dir=output_dir,
-    per_device_train_batch_size=hp["per_device_train_batch_size"],
-    per_device_eval_batch_size=hp["per_device_eval_batch_size"],
-    gradient_accumulation_steps=hp["gradient_accumulation_steps"],
-    learning_rate=hp["learning_rate"],
-    num_train_epochs=hp["num_train_epochs"],
-    save_strategy=config["training"]["save_strategy"],
-    logging_strategy=log_cfg["strategy"],
-    logging_steps=log_cfg["steps"],
-    evaluation_strategy=eval_cfg["strategy"],
-    fp16=opt["fp16"] if torch.cuda.is_available() else False,
-    gradient_checkpointing=opt["gradient_checkpointing"],
-    optim="adamw_torch",   # 🔥 force stable optimizer
-    report_to="none",
-)
+        output_dir=output_dir,
+        per_device_train_batch_size=hp["per_device_train_batch_size"],
+        per_device_eval_batch_size=hp["per_device_eval_batch_size"],
+        gradient_accumulation_steps=hp["gradient_accumulation_steps"],
+        learning_rate=hp["learning_rate"],
+        num_train_epochs=hp["num_train_epochs"],
+
+        save_strategy=config["training"]["save_strategy"],
+
+        logging_strategy=log_cfg["strategy"],
+        logging_steps=log_cfg["steps"],
+
+        eval_strategy=eval_cfg["strategy"],   # ✅ correct for transformers==4.38.2
+
+        fp16=torch.cuda.is_available(),
+        gradient_checkpointing=opt["gradient_checkpointing"],
+
+        optim="adamw_torch",                  # ✅ Windows-safe optimizer
+        report_to="none",
+    )
 
     trainer = Seq2SeqTrainer(
         model=model,
