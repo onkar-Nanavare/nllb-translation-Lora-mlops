@@ -1,3 +1,4 @@
+
 # name: LoRA Training Workflow
 
 # on:
@@ -5,64 +6,8 @@
 #     branches:
 #       - main
 #     paths:
-#       - 'nllb-translation-service/data/**'
-#       - 'nllb-translation-service/training/train_lora.py'
-#       - 'nllb-translation-service/config/training_config.yaml'
-#   workflow_dispatch:
-
-# jobs:
-#   lora_training:
-#     runs-on: [self-hosted, Windows, gpu, ml]
-#     timeout-minutes: 360
-
-#     steps:
-#       - name: Fix Git safe.directory (Windows)
-#         run: |
-#           git config --global --add safe.directory '*'
-
-#       - name: Checkout code
-#         uses: actions/checkout@v4
-
-#       - name: Create venv
-#         run: |
-#           python -m venv venv
-
-#       - name: Install dependencies
-#         run: |
-#           .\venv\Scripts\activate
-#           pip install --upgrade pip
-#           pip install -r requirements.txt
-#           pip install -r requirements-training.txt
-#           pip install accelerate datasets transformers peft
-
-#       - name: Run LoRA Training (Windows)
-#         shell: powershell
-#         run: |
-#           .\venv\Scripts\activate
-#           python nllb-translation-service/training/train_lora.py `
-#             --data-file nllb-translation-service/data/new_data.tsv `
-#             --glossary-file nllb-translation-service/data/glossary.json `
-#             --output-dir models/custom-nllb-fast `
-#             --model-name facebook/nllb-200-distilled-600M `
-#             --source-lang eng_Latn `
-#             --target-lang hin_Deva `
-#             --config nllb-translation-service/configs/training_config.yaml
-
-#       - name: Upload Trained Model
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: trained-model-lora
-#           path: models/custom-nllb-fast
-
-# name: LoRA Training Workflow 
-
-# on:
-#   push:
-#     branches:
-#       - main
-#     paths:
-#       - "nllb-translation-service/data/**"
-#       - "nllb-translation-service/config/**"
+#       - "data/**"
+#       - "config/**"
 #       - "training/**"
 #   workflow_dispatch:
 
@@ -80,10 +25,19 @@
 #         with:
 #           python-version: "3.10"
 
-#       - name: Create venv
+#       #  Cache venv for speed
+#       - name: Cache venv
+#         uses: actions/cache@v4
+#         with:
+#           path: venv
+#           key: venv-${{ hashFiles('requirements.txt', 'requirements-training.txt') }}
+
+#       - name: Create venv if not exists
 #         shell: powershell
 #         run: |
-#           python -m venv venv
+#           if (!(Test-Path "venv")) {
+#             python -m venv venv
+#           }
 
 #       - name: Activate venv & Install dependencies
 #         shell: powershell
@@ -94,24 +48,35 @@
 #           pip install -r requirements-training.txt
 #           pip install accelerate datasets transformers peft bitsandbytes
 
-#       - name: Run LoRA Training (FAST TEST MODE)
+#       - name: Run LoRA Training
 #         shell: powershell
 #         run: |
 #           .\venv\Scripts\Activate.ps1
 #           python training/train_lora.py `
-#             --data-file nllb-translation-service/data/new_data.tsv `
-#             --glossary-file nllb-translation-service/data/glossary.json `
+#             --data-file data/new_data.tsv `
+#             --glossary-file data/glossary.json `
 #             --output-dir models/custom-nllb-fast `
 #             --model-name facebook/nllb-200-distilled-600M `
 #             --source-lang eng_Latn `
 #             --target-lang hin_Deva `
-#             --config nllb-translation-service/configs/training_config.yaml
+#             --config configs/training_config.yaml
 
-#       - name: Upload trained LoRA adapters
-#         uses: actions/upload-artifact@v4
+#       #  Zip trained model
+#       - name: Zip trained model
+#         run: |
+#           tar -czf model.tar.gz models/custom-nllb-fast
+
+#       #  Upload to GitHub Releases (model registry)
+#       - name: Upload model to GitHub Release
+#         uses: softprops/action-gh-release@v2
 #         with:
-#           name: trained-lora-model
-#           path: models/custom-nllb-fast
+#           tag_name: model-${{ github.run_number }}
+#           name: Model ${{ github.run_number }}
+#           body: Auto-trained LoRA model
+#           files: model.tar.gz
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 name: LoRA Training Workflow
 
@@ -139,7 +104,6 @@ jobs:
         with:
           python-version: "3.10"
 
-      #  Cache venv for speed
       - name: Cache venv
         uses: actions/cache@v4
         with:
@@ -157,36 +121,58 @@ jobs:
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
           pip install accelerate datasets transformers peft bitsandbytes
 
-      - name: Run LoRA Training
+      #  Download previous model if exists
+      - name: Download latest model (if exists)
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p models/custom-nllb/latest
+          gh release download latest --pattern "model.tar.gz" --dir ./models
+
+      - name: Extract previous model (if exists)
+        continue-on-error: true
+        run: |
+          tar -xzf ./models/model.tar.gz -C ./models/custom-nllb/latest
+
+      #  Train from previous model if exists, else base model
+      - name: Run LoRA Training (incremental)
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
+
+          if (Test-Path "models/custom-nllb/latest") {
+            echo "Using previous trained model"
+            $MODEL_PATH="models/custom-nllb/latest"
+          } else {
+            echo "Using base model"
+            $MODEL_PATH="facebook/nllb-200-distilled-600M"
+          }
+
           python training/train_lora.py `
             --data-file data/new_data.tsv `
             --glossary-file data/glossary.json `
-            --output-dir models/custom-nllb-fast `
-            --model-name facebook/nllb-200-distilled-600M `
+            --output-dir models/custom-nllb/latest `
+            --model-name $MODEL_PATH `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
             --config configs/training_config.yaml
 
-      #  Zip trained model
       - name: Zip trained model
         run: |
-          tar -czf model.tar.gz models/custom-nllb-fast
+          tar -czf model.tar.gz models/custom-nllb/latest
 
-      #  Upload to GitHub Releases (model registry)
-      - name: Upload model to GitHub Release
+      - name: Upload model to GitHub Release (latest + versioned)
         uses: softprops/action-gh-release@v2
         with:
           tag_name: model-${{ github.run_number }}
           name: Model ${{ github.run_number }}
-          body: Auto-trained LoRA model
+          body: Incrementally fine-tuned LoRA model
           files: model.tar.gz
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

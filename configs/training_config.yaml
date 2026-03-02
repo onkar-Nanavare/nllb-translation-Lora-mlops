@@ -1,48 +1,65 @@
-# LoRA/PEFT fine-tuning for NLLB (fast-mode)
-# Medical domain EN->HI with glossary bias
-# Optimized for MX550 (2GB VRAM) and small dataset (2k examples)
-# Faster training (~4–5 hours)
+# Production-grade LoRA fine-tuning config for NLLB
+# This is suitable for real-world MLOps pipelines
 
 training:
   type: "lora"
-  output_dir: "./models/custom-nllb-fast"
-  save_strategy: "no"   # don't save checkpoints for fast test
+  output_dir: "./models/custom-nllb"
+  save_strategy: "steps"          # Save checkpoints during training
+  save_steps: 500                 # Save every N steps
+  save_total_limit: 3             # Keep only last 3 checkpoints
 
   data:
-    eval_split: 0.05   # MUST be > 0 and < 1 (5% eval)
+    eval_split: 0.1               # 10% validation
 
   hyperparameters:
-    num_train_epochs: 1
-    per_device_train_batch_size: 1
-    per_device_eval_batch_size: 1
-    learning_rate: 2.0e-4
-    gradient_accumulation_steps: 16
+    num_train_epochs: 2
+    per_device_train_batch_size: 2
+    per_device_eval_batch_size: 2
+    gradient_accumulation_steps: 8
+    learning_rate: 2.0e-5
+    warmup_steps: 100
+    lr_scheduler_type: "cosine"
 
   optimization:
-    fp16: false
+    fp16: true
     bf16: false
-    gradient_checkpointing: false
+    gradient_checkpointing: true
     optim: "adamw_torch"
 
   logging:
     strategy: "steps"
-    steps: 20
+    steps: 50
+    log_on_each_node: false
 
   evaluation:
-    strategy: "no"
+    strategy: "steps"
+    eval_steps: 500
+
+  early_stopping:
+    enabled: true
+    patience: 2
 
 lora:
-  r: 8
-  lora_alpha: 16
+  r: 16
+  lora_alpha: 32
   lora_dropout: 0.05
   target_modules:
     - "q_proj"
     - "v_proj"
+    - "k_proj"
+    - "o_proj"
   bias: "none"
   task_type: "SEQ_2_SEQ_LM"
   inference_mode: false
 
 preprocessing:
-  max_source_length: 64
+  max_source_length: 128
+  max_target_length: 128
 
 seed: 42
+
+# 🔥 MLOps model lifecycle control
+model:
+  base: "facebook/nllb-200-distilled-600M"
+  finetuned_path: "./models/custom-nllb/latest"
+  resume_from_checkpoint: true
