@@ -146,7 +146,7 @@ def train_lora(
         lora_config = create_lora_config(config)
         model = get_peft_model(model, lora_config)
 
-    model.gradient_checkpointing_enable(use_reentrant=False)
+    model.gradient_checkpointing_enable()
     model.print_trainable_parameters()
 
     if hasattr(tokenizer, "lang_code_to_id"):
