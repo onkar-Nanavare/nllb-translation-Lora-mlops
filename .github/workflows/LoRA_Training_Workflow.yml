@@ -120,8 +120,8 @@ on:
     branches:
       - main
     paths:
-      - "nllb-translation-service/data/**"
-      - "nllb-translation-service/config/**"
+      - "data/**"
+      - "config/**"
       - "training/**"
   workflow_dispatch:
 
