@@ -118,7 +118,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-training.txt
-          pip install peft==0.11.0
+
+      - name: Force clean PEFT install
+        run: |
+          pip uninstall -y peft
+          pip install peft --upgrade
+          python -c "import peft; print('PEFT VERSION:', peft.__version__)"
 
       - name: Verify tokenizer deps
         shell: powershell
