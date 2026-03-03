@@ -98,7 +98,7 @@ FROM dependencies as application
 
 COPY ./app ./app
 
-RUN mkdir -p /app/models/cache /app/models/custom-nllb/latest
+RUN mkdir -p /app/models/cache /app/models/custom-nllb
 
 # ⬇️ Download latest model at build time (if MODEL_URI is set)
 ARG MODEL_URI
@@ -107,7 +107,7 @@ ENV MODEL_URI=${MODEL_URI}
 RUN if [ -n "$MODEL_URI" ]; then \
       echo "Downloading model from $MODEL_URI" && \
       curl -L $MODEL_URI -o /app/models/model.tar.gz && \
-      tar -xzf /app/models/model.tar.gz -C /app/models/custom-nllb/latest && \
+      tar -xzf /app/models/model.tar.gz -C /app/models/custom-nllb && \
       rm /app/models/model.tar.gz ; \
     else \
       echo "MODEL_URI not set, skipping model download" ; \
