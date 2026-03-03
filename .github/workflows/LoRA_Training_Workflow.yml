@@ -95,36 +95,24 @@ jobs:
     timeout-minutes: 360
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      - name: Recreate venv (clean every run)
+      - name: Recreate venv
         shell: powershell
         run: |
-          if (Test-Path "venv") {
-            Remove-Item -Recurse -Force venv
-          }
+          if (Test-Path "venv") { Remove-Item -Recurse -Force venv }
           python -m venv venv
 
-      - name: Activate venv & Install dependencies
+      - name: Install dependencies
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-        
-
-     
-      - name: Verify tokenizer deps
-        shell: powershell
-        run: |
-          .\venv\Scripts\Activate.ps1
-          python -c "import sentencepiece, tokenizers; print('sentencepiece OK:', sentencepiece.__version__); print('tokenizers OK:', tokenizers.__version__)"
 
       - name: Download latest trained model (if exists)
         shell: powershell
@@ -137,36 +125,31 @@ jobs:
 
           try {
             gh release download --pattern "model.tar.gz" --dir ./models --clobber
-            Write-Host "Previous model downloaded."
+            tar -xzf ./models/model.tar.gz -C ./models
+            Remove-Item ./models/model.tar.gz
+            Write-Host "Previous model downloaded and extracted."
           } catch {
             Write-Host "No previous model found. Training from base model."
           }
 
-      - name: Extract previous model (if exists)
-        shell: powershell
-        run: |
-          if (Test-Path "./models/model.tar.gz") {
-            tar -xzf ./models/model.tar.gz -C ./models
-          }
-
-      - name: Run LoRA Training (resume automatically)
+      - name: Run LoRA Training
         shell: powershell
         run: |
           .\venv\Scripts\Activate.ps1
           python training/train_lora.py `
             --data-file data/new_data.tsv `
             --glossary-file data/glossary.json `
-            --output-dir models/custom-nllb-fast `
+            --output-dir models/custom-nllb `
             --model-name facebook/nllb-200-distilled-600M `
             --source-lang eng_Latn `
             --target-lang hin_Deva `
             --config configs/training_config.yaml `
-            --resume-from models/custom-nllb-fast
+            --resume-from models/custom-nllb
 
       - name: Zip trained model
         shell: powershell
         run: |
-          tar -czf model.tar.gz models/custom-nllb-fast
+          tar -czf model.tar.gz models/custom-nllb
 
       - name: Upload model to GitHub Release
         uses: softprops/action-gh-release@v2
