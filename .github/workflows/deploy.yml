@@ -16,7 +16,7 @@ jobs:
 
       # ✅ Download latest model from GitHub Release
       - name: Download latest trained model
-        uses: dsaltares/fetch-gh-release-asset@v1
+        uses: dsaltares/fetch-gh-release-asset@1.1.2
         with:
           repo: ${{ github.repository }}
           version: latest
