@@ -19,9 +19,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p models
-          gh release download --pattern "model.tar.gz" --dir ./models --clobber
-          tar -xzf ./models/model.tar.gz -C ./models
-          rm ./models/model.tar.gz
+
+          echo $GITHUB_TOKEN | gh auth login --with-token
+
+          latestTag=$(gh release list --limit 1 --json tagName --jq ".[0].tagName")
+
+          if [ -n "$latestTag" ]; then
+            echo "Latest release: $latestTag"
+            gh release download "$latestTag" --pattern "model.tar.gz" --dir ./models --clobber
+            tar -xzf ./models/model.tar.gz -C ./models
+            rm ./models/model.tar.gz
+          else
+            echo "No release found."
+            exit 1
+          fi
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
