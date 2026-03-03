@@ -22,7 +22,7 @@ class Settings(BaseSettings):
 
     # Model Configuration
     MODEL_NAME: str = "facebook/nllb-200-distilled-600M"
-    CUSTOM_MODEL_PATH: Optional[str] = "./models/custom-nllb/latest"
+    CUSTOM_MODEL_PATH: Optional[str] = "./models/custom-nllb"
     MODEL_URI: Optional[str] = None
     MODEL_CACHE_DIR: str = "./models/cache"
     USE_GPU: bool = True
