@@ -119,12 +119,7 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-training.txt
 
-      - name: Force clean PEFT install
-        run: |
-          pip uninstall -y peft
-          pip install peft --upgrade
-          python -c "import peft; print('PEFT VERSION:', peft.__version__)"
-
+     
       - name: Verify tokenizer deps
         shell: powershell
         run: |
