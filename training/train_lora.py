@@ -199,7 +199,7 @@ def main():
     parser.add_argument("--glossary-file", required=True)
     parser.add_argument("--source-lang", default="eng_Latn")
     parser.add_argument("--target-lang", default="hin_Deva")
-    parser.add_argument("--output-dir", default="./models/custom-nllb/latest")
+    parser.add_argument("--output-dir", default="./models/custom-nllb")
     parser.add_argument("--model-name", default="facebook/nllb-200-distilled-600M")
     parser.add_argument("--config", default="configs/training_config.yaml")
     parser.add_argument("--resume-from", default=None)
