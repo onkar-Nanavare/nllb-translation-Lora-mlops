@@ -114,6 +114,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # ✅ Proper authenticated download of latest release
       - name: Download latest trained model (if exists)
         shell: powershell
         env:
@@ -123,14 +124,31 @@ jobs:
             New-Item -ItemType Directory -Path models | Out-Null
           }
 
-          try {
-            gh release download --pattern "model.tar.gz" --dir ./models --clobber
-            tar -xzf ./models/model.tar.gz -C ./models
-            Remove-Item ./models/model.tar.gz
-            Write-Host "Previous model downloaded and extracted."
-          } catch {
-            Write-Host "No previous model found. Training from base model."
+          # Authenticate gh CLI
+          echo $env:GITHUB_TOKEN | gh auth login --with-token
+
+          # Get latest release tag
+          $release = gh release list --limit 1 --json tagName | ConvertFrom-Json
+
+          if ($release -and $release[0].tagName) {
+              $latestTag = $release[0].tagName
+              Write-Host "Latest release found: $latestTag"
+
+              gh release download $latestTag --pattern "model.tar.gz" --dir ./models --clobber
+              tar -xzf ./models/model.tar.gz -C ./models
+              Remove-Item ./models/model.tar.gz
+
+              Write-Host "Previous model downloaded and extracted."
           }
+          else {
+              Write-Host "No previous model found. Training from base model."
+          }
+
+      - name: Debug models folder
+        shell: powershell
+        run: |
+          Write-Host "Models folder content:"
+          Get-ChildItem -Recurse models
 
       - name: Run LoRA Training
         shell: powershell
