@@ -61,5 +61,5 @@ seed: 42
 # 🔥 MLOps model lifecycle control
 model:
   base: "facebook/nllb-200-distilled-600M"
-  finetuned_path: "./models/custom-nllb/latest"
+  finetuned_path: "./models/custom-nllb"
   resume_from_checkpoint: true
