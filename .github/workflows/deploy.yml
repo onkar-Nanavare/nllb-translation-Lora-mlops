@@ -20,26 +20,10 @@ jobs:
         run: |
           mkdir -p models
           gh release download --pattern "model.tar.gz" --dir ./models --clobber
-
-      - name: Extract model
-        run: |
           tar -xzf ./models/model.tar.gz -C ./models
           rm ./models/model.tar.gz
 
-          # Fix nested structure if present (models/models/custom-nllb-fast)
-          if [ -d "./models/models/custom-nllb-fast" ]; then
-            echo "Fixing nested models directory..."
-            mv ./models/models/custom-nllb-fast ./models/custom-nllb-fast
-            rm -rf ./models/models
-          fi
-
-          # Ensure destination folder exists
-          mkdir -p ./models/custom-nllb
-
-          # Move adapter to latest
-          mv ./models/custom-nllb-fast ./models/custom-nllb/latest
-
-      - name: Set up Docker Buildx
+      - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
 
       - name: Login to DockerHub
