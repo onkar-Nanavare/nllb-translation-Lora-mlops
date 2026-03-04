@@ -160,7 +160,7 @@ jobs:
             --source-lang eng_Latn `
             --target-lang hin_Deva `
             --config configs/training_config.yaml `
-            --resume-from models/custom-nllb
+            
 
       - name: Zip trained model
         shell: powershell
