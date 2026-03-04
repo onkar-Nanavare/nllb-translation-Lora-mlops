@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from typing import Dict, Optional
 import logging
+import re
 
 import torch
 from transformers import (
@@ -24,9 +25,15 @@ from training.train import TranslationDataset
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+# --------------------------------------------------
+# Utility Functions
+# --------------------------------------------------
+
 def load_training_config(config_path: str) -> Dict:
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
+
 
 def create_lora_config(config: Dict) -> LoraConfig:
     lora_params = config["lora"]
@@ -40,6 +47,24 @@ def create_lora_config(config: Dict) -> LoraConfig:
         inference_mode=False,
     )
 
+
+def get_latest_checkpoint(output_dir: str) -> Optional[str]:
+    if not os.path.exists(output_dir):
+        return None
+
+    checkpoints = []
+    for folder in os.listdir(output_dir):
+        if folder.startswith("checkpoint-"):
+            step = int(re.findall(r"\d+", folder)[0])
+            checkpoints.append((step, folder))
+
+    if not checkpoints:
+        return None
+
+    latest = sorted(checkpoints, key=lambda x: x[0])[-1][1]
+    return os.path.join(output_dir, latest)
+
+
 def load_glossary_pairs(glossary_path: str):
     with open(glossary_path, "r", encoding="utf-8") as f:
         glossary = json.load(f)
@@ -48,6 +73,7 @@ def load_glossary_pairs(glossary_path: str):
         for src, tgt in domain.items():
             pairs.append((src, tgt))
     return pairs
+
 
 def preprocess_function(examples, tokenizer, max_length):
     inputs = tokenizer(
@@ -62,12 +88,19 @@ def preprocess_function(examples, tokenizer, max_length):
         truncation=True,
         padding="max_length",
     )
+
     labels["input_ids"] = [
         [(l if l != tokenizer.pad_token_id else -100) for l in label]
         for label in labels["input_ids"]
     ]
+
     inputs["labels"] = labels["input_ids"]
     return inputs
+
+
+# --------------------------------------------------
+# Main Training Logic
+# --------------------------------------------------
 
 def train_lora(
     data_file: str,
@@ -77,12 +110,12 @@ def train_lora(
     output_dir: str,
     model_name: str,
     config_path: str,
-    resume_from: Optional[str] = None,
 ):
+
     logger.info("🚀 Starting NLLB LoRA fine-tuning pipeline")
     config = load_training_config(config_path)
 
-    # Load datasets
+    # Load dataset
     dataset = TranslationDataset(data_file, source_lang, target_lang)
     hf_dataset = dataset.to_hf_dataset()
 
@@ -100,7 +133,10 @@ def train_lora(
         "target": combined_targets,
     }).shuffle(seed=config["seed"])
 
-    split = hf_dataset.train_test_split(test_size=config["training"]["data"]["eval_split"])
+    split = hf_dataset.train_test_split(
+        test_size=config["training"]["data"]["eval_split"]
+    )
+
     train_dataset = split["train"]
     eval_dataset = split["test"]
 
@@ -109,29 +145,37 @@ def train_lora(
     tokenizer.src_lang = source_lang
 
     # Model
-    base_model_path = model_name
-    finetuned_path = config.get("model", {}).get("finetuned_path")
-
-    if resume_from and os.path.exists(resume_from):
-        logger.info(f"🔁 Resuming from LoRA adapter: {resume_from}")
-    elif finetuned_path and os.path.exists(finetuned_path):
-        resume_from = finetuned_path
-        logger.info(f"🔁 Auto-resuming from latest adapter: {finetuned_path}")
-
-    logger.info(f"📦 Loading base model: {base_model_path}")
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = AutoModelForSeq2SeqLM.from_pretrained(
-        base_model_path,
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        model_name,
         torch_dtype=torch.float16 if device == "cuda" else torch.float32,
     ).to(device)
 
-    model.config.use_cache = False  # required for LoRA
+    base_model.config.use_cache = False
 
-    if resume_from and os.path.exists(resume_from):
-        model = PeftModel.from_pretrained(model, resume_from, is_trainable=True)
+    latest_checkpoint = get_latest_checkpoint(output_dir)
+
+    # --------------------------------------------------
+    # Resume Logic
+    # --------------------------------------------------
+
+    if latest_checkpoint:
+        logger.info(f"🔁 Found checkpoint: {latest_checkpoint}")
+        model = PeftModel.from_pretrained(base_model, latest_checkpoint, is_trainable=True)
+        resume_checkpoint = latest_checkpoint
+
+    elif os.path.exists(output_dir) and os.path.exists(
+        os.path.join(output_dir, "adapter_model.safetensors")
+    ):
+        logger.info("🔁 No checkpoint found. Loading existing adapter weights.")
+        model = PeftModel.from_pretrained(base_model, output_dir, is_trainable=True)
+        resume_checkpoint = None
+
     else:
+        logger.info("🆕 No previous model found. Starting fresh LoRA training.")
         lora_config = create_lora_config(config)
-        model = get_peft_model(model, lora_config)
+        model = get_peft_model(base_model, lora_config)
+        resume_checkpoint = None
 
     model.train()
     model.print_trainable_parameters()
@@ -141,26 +185,21 @@ def train_lora(
 
     max_length = config["preprocessing"]["max_source_length"]
 
-    # Preprocess datasets
     train_dataset = train_dataset.map(
         lambda x: preprocess_function(x, tokenizer, max_length),
         batched=True,
         remove_columns=train_dataset.column_names,
     )
+
     eval_dataset = eval_dataset.map(
         lambda x: preprocess_function(x, tokenizer, max_length),
         batched=True,
         remove_columns=eval_dataset.column_names,
     )
 
-    # Data collator
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
-    # Training args
     hp = config["training"]["hyperparameters"]
-    opt = config["training"]["optimization"]
-    log_cfg = config["training"]["logging"]
-    eval_cfg = config["training"]["evaluation"]
 
     training_args = Seq2SeqTrainingArguments(
         output_dir=output_dir,
@@ -170,15 +209,17 @@ def train_lora(
         learning_rate=hp["learning_rate"],
         num_train_epochs=hp["num_train_epochs"],
         save_strategy=config["training"]["save_strategy"],
-        logging_strategy=log_cfg["strategy"],
-        logging_steps=log_cfg["steps"],
-        evaluation_strategy=eval_cfg["strategy"],
-        fp16=device=="cuda",
+        save_steps=config["training"]["save_steps"],
+        save_total_limit=config["training"]["save_total_limit"],
+        evaluation_strategy=config["training"]["evaluation"]["strategy"],
+        logging_strategy=config["training"]["logging"]["strategy"],
+        logging_steps=config["training"]["logging"]["steps"],
+        fp16=device == "cuda",
         optim="adamw_torch",
         report_to="none",
+        load_best_model_at_end=False,
     )
 
-    # Trainer
     trainer = Seq2SeqTrainer(
         model=model,
         args=training_args,
@@ -187,11 +228,20 @@ def train_lora(
         data_collator=data_collator,
     )
 
-    trainer.train()
+    if resume_checkpoint:
+        trainer.train(resume_from_checkpoint=resume_checkpoint)
+    else:
+        trainer.train()
 
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
-    logger.info(f"✅ LoRA adapter saved to: {output_dir}")
+
+    logger.info(f"✅ Training complete. Model saved to {output_dir}")
+
+
+# --------------------------------------------------
+# CLI
+# --------------------------------------------------
 
 def main():
     parser = argparse.ArgumentParser()
@@ -202,7 +252,7 @@ def main():
     parser.add_argument("--output-dir", default="./models/custom-nllb")
     parser.add_argument("--model-name", default="facebook/nllb-200-distilled-600M")
     parser.add_argument("--config", default="configs/training_config.yaml")
-    parser.add_argument("--resume-from", default=None)
+
     args = parser.parse_args()
 
     train_lora(
@@ -213,8 +263,8 @@ def main():
         output_dir=args.output_dir,
         model_name=args.model_name,
         config_path=args.config,
-        resume_from=args.resume_from,
     )
+
 
 if __name__ == "__main__":
     main()
