@@ -174,5 +174,6 @@ jobs:
           name: Model ${{ github.run_number }}
           body: Auto-trained LoRA model
           files: model.tar.gz
+          make_latest : true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
